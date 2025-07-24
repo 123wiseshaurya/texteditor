@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor with Line Numbers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <div class="jump-controls">
+                <input type="number" id="jumpInput" placeholder="Line number" min="1">
+                <button id="jumpBtn">Jump</button>
+            </div>
+            <div class="file-upload">
+                <label for="fileInput" class="file-label">Load File</label>
+                <input type="file" id="fileInput" accept=".txt">
+            </div>
+        </div>
+        <div class="editor-container">
+            <div id="lineNumbers" class="line-numbers">1</div>
+            <textarea id="editor" spellcheck="false" placeholder="Start typing here..."></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
